@@ -179,12 +179,18 @@ ScriptedImporter:
       height: 13
     spriteID: 4b0d5fe94dbcd70449cdbf89b400334e
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 5.5, y: 6.5}
+      - {x: -5.5, y: 6.5}
+      - {x: -5.5, y: -1.5}
+      - {x: -5.5, y: -6.5}
+      - {x: 5.5, y: -6.5}
     vertices: []
     spritePhysicsOutline: []
     indices: 
     edges: []
-    tessellationDetail: 0
+    tessellationDetail: 0.937
     uvTransform: {x: 25, y: 111}
   - name: Frame_3
     originalName: 

@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
 
     private bool facingRight = true;
-    public float speed = 1f;
+    public float speed = 4f;
     private Vector3 movement;
     private Vector2 lastMovementDirection;
 
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = movement*speed;
     }
 
-    void Flip(){
+    void Flip(){ //Flip character when direction change
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
@@ -57,5 +57,13 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("LastX",lastMovementDirection.x);
         anim.SetFloat("LastY",lastMovementDirection.y);
         anim.SetFloat("MoveMagnitude",movement.magnitude);
+        if(Input.GetKey(KeyCode.LeftShift)){
+            speed=8;
+            anim.SetBool("ShiftPressed",true);
+        }else{
+            anim.SetBool("ShiftPressed",false);
+            speed=4;
+
+        }
     }
 }

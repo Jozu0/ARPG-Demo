@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa847023a7329504b88b85f118022933
+timeCreated: 1493100988
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 69402
+  packageName: Colour By Height Shader Lit/Unlit
+  packageVersion: 1.0
+  assetPath: Assets/ColourByHeight/ColourByHeight.mat
+  uploadId: 176265

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a4c7c55efb4f3e14ba5619278bec2263
+timeCreated: 1469579843
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 69402
+  packageName: Colour By Height Shader Lit/Unlit
+  packageVersion: 1.0
+  assetPath: Assets/ColourByHeight/SmoothShadedColourByHeightShader.shader
+  uploadId: 176265
