@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 89ff89a48416a57499d9e2f164324460
+guid: 0021c7909e586994ea36f5d003713960
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3582916166963785052
-    second: hurt_0
+      213: 8793639957104055765
+    second: idle_0
   - first:
-      213: 1642290761556927327
-    second: hurt_1
+      213: 6084859605308855041
+    second: idle_1
   - first:
-      213: 6819390902422994280
-    second: hurt_2
+      213: 8603369663158992956
+    second: idle_2
   - first:
-      213: 6079887152930431857
-    second: hurt_3
+      213: -5906421172241655209
+    second: idle_3
   - first:
-      213: 6351682349791027127
-    second: hurt_4
+      213: 5704420531145803721
+    second: idle_4
   - first:
-      213: 2988431609061880149
-    second: hurt_5
+      213: -148617073940163930
+    second: idle_5
   - first:
-      213: -856480874173875929
-    second: hurt_6
+      213: 4729606205655721961
+    second: idle_6
   - first:
-      213: -7937370475652799911
-    second: hurt_7
+      213: -2073685336235588006
+    second: idle_7
   - first:
-      213: -6680366435788347620
-    second: hurt_8
+      213: 512795395688303107
+    second: idle_8
   - first:
-      213: 6358333157353456557
-    second: hurt_9
+      213: 5667770778836351527
+    second: idle_9
   - first:
-      213: -6682746973951778192
-    second: hurt_10
+      213: -1480364998338425778
+    second: idle_10
   - first:
-      213: -5109314157466476397
-    second: hurt_11
+      213: -189419392851352084
+    second: idle_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hurt_0
+      name: idle_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 33
         y: 192
-        width: 15
-        height: 17
+        width: 13
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a29e10babce64ec0800000000000000
-      internalID: -3582916166963785052
+      spriteID: 5d55ed543f8490a70800000000000000
+      internalID: 8793639957104055765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_1
+      name: idle_1
       rect:
         serializedVersion: 2
         x: 113
@@ -170,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f53a1841fb69ac610800000000000000
-      internalID: 1642290761556927327
+      spriteID: 103de827293c17450800000000000000
+      internalID: 6084859605308855041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_2
+      name: idle_2
       rect:
         serializedVersion: 2
         x: 193
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86df37325e753ae50800000000000000
-      internalID: 6819390902422994280
+      spriteID: c30c6f3402f456770800000000000000
+      internalID: 8603369663158992956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_3
+      name: idle_3
       rect:
         serializedVersion: 2
         x: 273
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17321e82729106450800000000000000
-      internalID: 6079887152930431857
+      spriteID: 75a90b6cc3d280ea0800000000000000
+      internalID: -5906421172241655209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_4
+      name: idle_4
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 112
-        width: 17
-        height: 17
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7bf9969c175b52850800000000000000
-      internalID: 6351682349791027127
+      spriteID: 9c70460ff3c2a2f40800000000000000
+      internalID: 5704420531145803721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_5
+      name: idle_5
       rect:
         serializedVersion: 2
         x: 112
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 551bead07ba097920800000000000000
-      internalID: 2988431609061880149
+      spriteID: 6a21d340f8100fdf0800000000000000
+      internalID: -148617073940163930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_6
+      name: idle_6
       rect:
         serializedVersion: 2
         x: 192
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72933f9ce2b2d14f0800000000000000
-      internalID: -856480874173875929
+      spriteID: 9e7a79719cfe2a140800000000000000
+      internalID: 4729606205655721961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_7
+      name: idle_7
       rect:
         serializedVersion: 2
         x: 272
@@ -302,19 +302,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 952aa0c3b9bc8d190800000000000000
-      internalID: -7937370475652799911
+      spriteID: a56cdbd6c2ac833e0800000000000000
+      internalID: -2073685336235588006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_8
+      name: idle_8
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 32
-        width: 17
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -324,20 +324,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c17a469ee129a43a0800000000000000
-      internalID: -6680366435788347620
+      spriteID: 30a057a02b0dd1700800000000000000
+      internalID: 512795395688303107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_9
+      name: idle_9
       rect:
         serializedVersion: 2
         x: 112
         y: 32
         width: 15
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da304a791565d3850800000000000000
-      internalID: 6358333157353456557
+      spriteID: 72a31e48e77f7ae40800000000000000
+      internalID: 5667770778836351527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_10
+      name: idle_10
       rect:
         serializedVersion: 2
         x: 192
@@ -368,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 072a9cda80d1243a0800000000000000
-      internalID: -6682746973951778192
+      spriteID: e4ccd1890efa47be0800000000000000
+      internalID: -1480364998338425778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_11
+      name: idle_11
       rect:
         serializedVersion: 2
         x: 272
@@ -390,8 +390,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 390265618d11819b0800000000000000
-      internalID: -5109314157466476397
+      spriteID: ce56687d01c0f5df0800000000000000
+      internalID: -189419392851352084
       vertices: []
       indices: 
       edges: []
