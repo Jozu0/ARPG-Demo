@@ -60,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftShift)){
             speed=8;
             anim.SetBool("ShiftPressed",true);
+            Debug.Log("run");
         }else{
             anim.SetBool("ShiftPressed",false);
             speed=4;
