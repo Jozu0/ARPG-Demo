@@ -6,14 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     // Références pour les composants
     public Rigidbody2D rb;
-    public Animator anim;
 
     private bool isFacingRight = true;
-    public float speed = 4f;
+    public float moveSpeed = 4f;
 
     // Variables pour gérer le mouvement
-    private Vector3 movement;
-    private Vector2 lastMovementDirection;
     private Vector2 moveDirection; // Ajoutez cette variable pour stocker la direction du mouvement
 
     private void Start()
@@ -41,14 +38,21 @@ public class PlayerController : MonoBehaviour
     {
         moveDirection = direction;
 
+        if (direction.y != 0)
+        {
+            ResetFlip();
+        }
         // Gestion de l'orientation du sprite
-        if (direction.x > 0 && !isFacingRight)
+        if (direction.x > 0 && !isFacingRight && direction.y==0)
         {
             Flip();
         }
-        else if (direction.x < 0 && isFacingRight)
+        else if (direction.x < 0 && isFacingRight && direction.y==0)
         {
             Flip();
+        }
+        if(direction.y!=0){
+            
         }
     }
 
@@ -58,26 +62,41 @@ public class PlayerController : MonoBehaviour
         {
             rb = GetComponent<Rigidbody2D>();
         }
-        if (anim == null)
-        {
-            anim = GetComponent<Animator>();
-        }
     }
 
-    // Update est appelé une fois par frame
-    void Update()
-    {
-        ProcessInputs();
-        Animate();  
-        if (movement.x > 0 && !isFacingRight || movement.x < 0 && isFacingRight)
-        {
-            Flip();
-        }
+    void Update(){
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
+   {
+       // On utilise FixedUpdate pour le mouvement physique
+       Move();
+   }
+  
+   // ReSharper disable Unity.PerformanceAnalysis
+   private void Move()
+   {
+       // Mouvement avec Rigidbody2D pour une meilleure physique
+        if (rb)
+        {   
+            rb.linearVelocity = moveDirection* moveSpeed;
+        }
+        else
+        {
+            Debug.LogError("Rigidbody2D is missing on PlayerController");
+        }
+   }
+
+    public void SpeedMove(float speed)
     {
-        rb.linearVelocity = movement * speed;  // Utilisez rb.velocity au lieu de rb.linearVelocity
+        if(rb){
+            moveSpeed = speed ;
+
+        }
+        else
+        {
+           Debug.LogError("Rigidbody2D is missing on PlayerController");
+        }
     }
 
     void Flip() // Flip character when direction changes
@@ -85,44 +104,17 @@ public class PlayerController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
-        isFacingRight = !isFacingRight; // Corrige le nom de la variable ici
+        isFacingRight = !isFacingRight;
     }
 
-    void ProcessInputs()
+    // New function to reset the scale to the original value
+    void ResetFlip()
     {
-        // Récupérer les axes d'entrée (Horizontal et Vertical)
-        int moveX = (int)Input.GetAxisRaw("Horizontal");
-        int moveY = (int)Input.GetAxisRaw("Vertical");
-
-        // Mémoriser la dernière direction si le joueur est inactif
-        if (moveX == 0 && moveY == 0 && (movement.x != 0 || movement.y != 0))
-        {
-            lastMovementDirection = movement;
-        }
-
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        movement.Normalize(); // Normaliser le vecteur de mouvement pour éviter les vitesses diagonales plus rapides
+        Vector3 scale = transform.localScale;
+        scale.x = 1f; // Original scale value
+        transform.localScale = scale;
+        isFacingRight = true; // Assuming right is the default facing direction
     }
+        
 
-    void Animate()
-    {
-        anim.SetFloat("MoveX", movement.x);
-        anim.SetFloat("MoveY", movement.y);
-        anim.SetFloat("LastX", lastMovementDirection.x);
-        anim.SetFloat("LastY", lastMovementDirection.y);
-        anim.SetFloat("MoveMagnitude", movement.magnitude);
-
-        // Gestion de la vitesse de déplacement en fonction de la touche Shift
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = 8;
-            anim.SetBool("ShiftPressed", true);
-        }
-        else
-        {
-            anim.SetBool("ShiftPressed", false);
-            speed = 4;
-        }
     }
-}

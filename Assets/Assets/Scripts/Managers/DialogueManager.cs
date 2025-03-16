@@ -94,6 +94,7 @@ public class DialogueManager : MonoBehaviour
        {
            // Si le texte est en train d'être tapé, le compléter immédiatement
            CompleteTyping();
+
        }
        else
        {
@@ -117,48 +118,57 @@ public class DialogueManager : MonoBehaviour
        DisplayNextLine();
    }
   
-   private void DisplayNextLine()
-   {
-       // Si on est à la fin du dialogue, terminer
-       if (currentLineIndex >= currentLines.Length)
-       {
-           EndDialogue();
-           return;
-       }
-      
-       // Désactiver l'indicateur de continuation
-       if (continueIndicator)
-       {
-           continueIndicator.SetActive(false);
-       }
-      
-       // Commencer à taper la ligne
-       typingCoroutine = StartCoroutine(TypeLine(currentLines[currentLineIndex]));
-       currentLineIndex++;
-   }
-  
-   private IEnumerator TypeLine(string line)
-   {
-       isTyping = true;
-       dialogueText.text = "";
-      
-       foreach (char c in line.ToCharArray())
-       {
-           dialogueText.text += c;
-           yield return new WaitForSeconds(typingSpeed);
-       }
-      
-       isTyping = false;
-      
-       // Activer l'indicateur de continuation
-       if (continueIndicator)
-       {
-           continueIndicator.SetActive(true);
-       }
-   }
-  
-   private void CompleteTyping()
-   {
+    private void DisplayNextLine()
+    {
+        // If we're already typing, stop the previous coroutine
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+        
+        // Check if out of lines
+        if (currentLineIndex >= currentLines.Length)
+        {
+            EndDialogue();
+            return;
+        }
+        
+        // Disable continue indicator
+        if (continueIndicator)
+        {
+            continueIndicator.SetActive(false);
+        }
+        
+        // Start new typing coroutine
+        typingCoroutine = StartCoroutine(TypeLine(currentLines[currentLineIndex]));
+        currentLineIndex++;
+        Debug.Log(currentLineIndex);
+    }
+
+    private IEnumerator TypeLine(string line)
+    {
+        isTyping = true;
+        dialogueText.text = "";
+        
+        // Ensure typing speed is reasonable
+        float safeTypingSpeed = Mathf.Clamp(typingSpeed, 0.01f, 1f);
+        
+        foreach (char c in line)
+        {
+            dialogueText.text += c;
+            yield return new WaitForSeconds(safeTypingSpeed);
+        }
+        
+        isTyping = false;
+        
+        // Activate continue indicator
+        if (continueIndicator)
+        {
+            continueIndicator.SetActive(true);
+        }
+    }
+    private void CompleteTyping()
+    {
        if (typingCoroutine != null)
        {
            StopCoroutine(typingCoroutine);
@@ -172,7 +182,7 @@ public class DialogueManager : MonoBehaviour
        {
            continueIndicator.SetActive(true);
        }
-   }
+    }
   
    private void EndDialogue()
    {
