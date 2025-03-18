@@ -1,0 +1,2301 @@
+fileFormatVersion: 2
+guid: 9155564e4aeddbf488f1c0cb69b19fc6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4169403576475248064
+    second: Stone and Rock_0
+  - first:
+      213: -1012578838172530703
+    second: Stone and Rock_1
+  - first:
+      213: -5360025267050557785
+    second: Stone and Rock_2
+  - first:
+      213: -102823161316948575
+    second: Stone and Rock_3
+  - first:
+      213: 5013069417426673057
+    second: Stone and Rock_4
+  - first:
+      213: -723069870433265959
+    second: Stone and Rock_5
+  - first:
+      213: 4838217121669799627
+    second: Stone and Rock_6
+  - first:
+      213: 1943354858167720246
+    second: Stone and Rock_7
+  - first:
+      213: 2069367704381870292
+    second: Stone and Rock_8
+  - first:
+      213: -3536889861156178378
+    second: Stone and Rock_9
+  - first:
+      213: 3860874382478923126
+    second: Stone and Rock_10
+  - first:
+      213: -9052527601578257212
+    second: Stone and Rock_11
+  - first:
+      213: -8400943377616895652
+    second: Stone and Rock_12
+  - first:
+      213: 8919150919235582830
+    second: Stone and Rock_13
+  - first:
+      213: 7266525403344031891
+    second: Stone and Rock_14
+  - first:
+      213: -3736881466281061995
+    second: Stone and Rock_15
+  - first:
+      213: 3732926569777814156
+    second: Stone and Rock_16
+  - first:
+      213: 7574222892030923052
+    second: Stone and Rock_17
+  - first:
+      213: 7797208264580760875
+    second: Stone and Rock_18
+  - first:
+      213: 4383467442291552274
+    second: Stone and Rock_19
+  - first:
+      213: 2419498805102897997
+    second: Stone and Rock_20
+  - first:
+      213: -4922893063831064853
+    second: Stone and Rock_21
+  - first:
+      213: -3446409612217577963
+    second: Stone and Rock_22
+  - first:
+      213: -1863761510308940565
+    second: Stone and Rock_23
+  - first:
+      213: -772597611871089682
+    second: Stone and Rock_24
+  - first:
+      213: -3486188389619997085
+    second: Stone and Rock_25
+  - first:
+      213: 933806739027862749
+    second: Stone and Rock_26
+  - first:
+      213: 8654686617841938774
+    second: Stone and Rock_27
+  - first:
+      213: 1321280349412842792
+    second: Stone and Rock_28
+  - first:
+      213: 7553777383975919172
+    second: Stone and Rock_29
+  - first:
+      213: -5199161916587615738
+    second: Stone and Rock_30
+  - first:
+      213: 2121815219707538829
+    second: Stone and Rock_31
+  - first:
+      213: 2853701531512096445
+    second: Stone and Rock_32
+  - first:
+      213: -8019877119096707440
+    second: Stone and Rock_33
+  - first:
+      213: 2862001183701029628
+    second: Stone and Rock_34
+  - first:
+      213: 7220368428970661453
+    second: Stone and Rock_35
+  - first:
+      213: -6171939709690970461
+    second: Stone and Rock_36
+  - first:
+      213: 5719330679184415252
+    second: Stone and Rock_37
+  - first:
+      213: -7790480468401029927
+    second: Stone and Rock_38
+  - first:
+      213: -8387281435455745108
+    second: Stone and Rock_39
+  - first:
+      213: -306836406988566502
+    second: Stone and Rock_40
+  - first:
+      213: -4695961113096903286
+    second: Stone and Rock_41
+  - first:
+      213: -3123295796006535472
+    second: Stone and Rock_42
+  - first:
+      213: 4277010577048032223
+    second: Stone and Rock_43
+  - first:
+      213: -159356202886900984
+    second: Stone and Rock_44
+  - first:
+      213: 8922518886880734248
+    second: Stone and Rock_45
+  - first:
+      213: 4960954412805973783
+    second: Stone and Rock_46
+  - first:
+      213: -7521828742293368312
+    second: Stone and Rock_47
+  - first:
+      213: 419286708961986495
+    second: Stone and Rock_48
+  - first:
+      213: 6971493578334691200
+    second: Stone and Rock_49
+  - first:
+      213: 8552169115122338651
+    second: Stone and Rock_50
+  - first:
+      213: -6763157518271892674
+    second: Stone and Rock_51
+  - first:
+      213: 777320193812948146
+    second: Stone and Rock_52
+  - first:
+      213: -5451989884927271231
+    second: Stone and Rock_53
+  - first:
+      213: -6161460524454392183
+    second: Stone and Rock_54
+  - first:
+      213: -3305126603978006768
+    second: Stone and Rock_55
+  - first:
+      213: 5076286672166783579
+    second: Stone and Rock_56
+  - first:
+      213: 4240795221012656384
+    second: Stone and Rock_57
+  - first:
+      213: 4419634571586332671
+    second: Stone and Rock_58
+  - first:
+      213: 1741682087992676577
+    second: Stone and Rock_59
+  - first:
+      213: -5170331562084707344
+    second: Stone and Rock_60
+  - first:
+      213: 3417723614028918498
+    second: Stone and Rock_61
+  - first:
+      213: 3837680120045383425
+    second: Stone and Rock_62
+  - first:
+      213: 2342961523525500356
+    second: Stone and Rock_63
+  - first:
+      213: 4270691876081437193
+    second: Stone and Rock_64
+  - first:
+      213: 1054463344888753215
+    second: Stone and Rock_65
+  - first:
+      213: 2444986389347189139
+    second: Stone and Rock_66
+  - first:
+      213: -6258253272594386693
+    second: Stone and Rock_67
+  - first:
+      213: 6547475162353938716
+    second: Stone and Rock_68
+  - first:
+      213: -8380235169287508864
+    second: Stone and Rock_69
+  - first:
+      213: -7336899061650283022
+    second: Stone and Rock_70
+  - first:
+      213: 2543806380423897803
+    second: Stone and Rock_71
+  - first:
+      213: -6611359490686976344
+    second: Stone and Rock_72
+  - first:
+      213: 8413304575930380223
+    second: Stone and Rock_73
+  - first:
+      213: -111369240513898987
+    second: Stone and Rock_74
+  - first:
+      213: -2252756096773520179
+    second: Stone and Rock_75
+  - first:
+      213: -6810462716942574506
+    second: Stone and Rock_76
+  - first:
+      213: 80442520992058167
+    second: Stone and Rock_77
+  - first:
+      213: 1760819348463341853
+    second: Stone and Rock_78
+  - first:
+      213: -288147947917455215
+    second: Stone and Rock_79
+  - first:
+      213: -3800049981503599826
+    second: Stone and Rock_80
+  - first:
+      213: 667974611699720385
+    second: Stone and Rock_81
+  - first:
+      213: -6960568380222402964
+    second: Stone and Rock_82
+  - first:
+      213: 2619015973538499537
+    second: Stone and Rock_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stone and Rock_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 180
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5ec0d5672bcd930800000000000000
+      internalID: 4169403576475248064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f706ab59e892f1f0800000000000000
+      internalID: -1012578838172530703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae45521b6d5d95b0800000000000000
+      internalID: -5360025267050557785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5450b21e2b29ef0800000000000000
+      internalID: -102823161316948575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 178
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad57142310029540800000000000000
+      internalID: 5013069417426673057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 178
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d69909a8c327f5f0800000000000000
+      internalID: -723069870433265959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 178
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce575396dcc42340800000000000000
+      internalID: 4838217121669799627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 177
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639dd9972fe28fa10800000000000000
+      internalID: 1943354858167720246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 180
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0d85196fed7bc10800000000000000
+      internalID: 2069367704381870292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636fa1819617aeec0800000000000000
+      internalID: -3536889861156178378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675df0a8bc4949530800000000000000
+      internalID: 3860874382478923126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c45284db16fe5280800000000000000
+      internalID: -9052527601578257212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 178
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5189f6128ad96b80800000000000000
+      internalID: -8400943377616895652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 178
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bb22f518037cb70800000000000000
+      internalID: 8919150919235582830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 178
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3905ca9ca52e7d460800000000000000
+      internalID: 7266525403344031891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 177
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5919392fa1ee32cc0800000000000000
+      internalID: -3736881466281061995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a5934ffe40ec330800000000000000
+      internalID: 3732926569777814156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 147
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c219221279b0d1960800000000000000
+      internalID: 7574222892030923052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 147
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b258312fa9f353c60800000000000000
+      internalID: 7797208264580760875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 146
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21037460a6435dc30800000000000000
+      internalID: 4383467442291552274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 147
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4be3ac1859c39120800000000000000
+      internalID: 2419498805102897997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 147
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee6d1f47de5eabb0800000000000000
+      internalID: -4922893063831064853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 147
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e8741b7b4eb20d0800000000000000
+      internalID: -3446409612217577963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 146
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be47dffe7c69226e0800000000000000
+      internalID: -1863761510308940565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebcb1eb09e2745f0800000000000000
+      internalID: -772597611871089682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 132
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366eb9851229e9fc0800000000000000
+      internalID: -3486188389619997085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_26
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 132
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd42f98184c85fc00800000000000000
+      internalID: 933806739027862749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_27
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 132
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651bbcadf9f9b1870800000000000000
+      internalID: 8654686617841938774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 129
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dd4733a71265210800000000000000
+      internalID: 1321280349412842792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 129
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e9344528864d860800000000000000
+      internalID: 7553777383975919172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_30
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 129
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a5e0088cdd8d7b0800000000000000
+      internalID: -5199161916587615738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d6fa153b3327d10800000000000000
+      internalID: 2121815219707538829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_32
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db644c06c626a9720800000000000000
+      internalID: 2853701531512096445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_33
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 132
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09625f5504ca3b090800000000000000
+      internalID: -8019877119096707440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_34
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 132
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf25f3db9eed7b720800000000000000
+      internalID: 2862001183701029628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_35
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 132
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46dd3cb4d6e33460800000000000000
+      internalID: 7220368428970661453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 129
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aefdbcc88dd85aa0800000000000000
+      internalID: -6171939709690970461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 129
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ad7cd43f42f5f40800000000000000
+      internalID: 5719330679184415252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_38
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 129
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc765b2a47a2e390800000000000000
+      internalID: -7790480468401029927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_39
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca39e60e8f36a9b80800000000000000
+      internalID: -8387281435455745108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 99
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a101a4dd9e5edbbf0800000000000000
+      internalID: -306836406988566502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 100
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85afc67f3894deb0800000000000000
+      internalID: -4695961113096903286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 100
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de3f8e7503d7a4d0800000000000000
+      internalID: -3123295796006535472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 99
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd35981957efa5b30800000000000000
+      internalID: 4277010577048032223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_44
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 99
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803db26b06ad9cdf0800000000000000
+      internalID: -159356202886900984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_45
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 100
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c6d3277a723db70800000000000000
+      internalID: 8922518886880734248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 100
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717e43211c9d8d440800000000000000
+      internalID: 4960954412805973783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 99
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802d74a7c981d9790800000000000000
+      internalID: -7521828742293368312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 84
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7c8b25a0b91d500800000000000000
+      internalID: 419286708961986495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_49
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f5e821978bfb060800000000000000
+      internalID: 6971493578334691200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_50
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b0fe5bf786fa670800000000000000
+      internalID: 8552169115122338651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_51
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e333463e1107422a0800000000000000
+      internalID: -6763157518271892674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 81
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b465fc099899ca00800000000000000
+      internalID: 777320193812948146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 81
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce13e5e514a654b0800000000000000
+      internalID: -5451989884927271231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_54
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 81
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ecd4e3c481e7aa0800000000000000
+      internalID: -6161460524454392183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f92307dd4d122d0800000000000000
+      internalID: -3305126603978006768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_56
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 84
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a0d8045d7927640800000000000000
+      internalID: 5076286672166783579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_57
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00132a9e8c45ada30800000000000000
+      internalID: 4240795221012656384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_58
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff760740a32b55d30800000000000000
+      internalID: 4419634571586332671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_59
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0d67691a2bb2810800000000000000
+      internalID: 1741682087992676577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 81
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f353fe76da4f38b0800000000000000
+      internalID: -5170331562084707344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_61
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 81
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee68a2e4813e6f20800000000000000
+      internalID: 3417723614028918498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_62
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 81
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f22ec7cbd224530800000000000000
+      internalID: 3837680120045383425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd3524971fd38020800000000000000
+      internalID: 2342961523525500356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_64
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 51
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a0bfa52ab844b30800000000000000
+      internalID: 4270691876081437193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_65
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 52
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ca3cc43d432ae00800000000000000
+      internalID: 1054463344888753215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 52
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39144b1ca265ee120800000000000000
+      internalID: 2444986389347189139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 51
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0f5946ec73629a0800000000000000
+      internalID: -6258253272594386693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_68
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 51
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11bccb58fd4dda50800000000000000
+      internalID: 6547475162353938716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_69
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 52
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ce160938c63bb80800000000000000
+      internalID: -8380235169287508864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 52
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5207d0d291e2a90800000000000000
+      internalID: -7336899061650283022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 51
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2e982ec6a6d4320800000000000000
+      internalID: 2543806380423897803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_72
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aef13b529bbf34a0800000000000000
+      internalID: -6611359490686976344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_73
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 36
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfaf7bafef02c470800000000000000
+      internalID: 8413304575930380223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_74
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 36
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516934c0446547ef0800000000000000
+      internalID: -111369240513898987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_75
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 36
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4083ef34a9cb0e0800000000000000
+      internalID: -2252756096773520179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 33
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c98980e306c71a0800000000000000
+      internalID: -6810462716942574506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_77
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 33
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b8190fb0acd1100800000000000000
+      internalID: 80442520992058167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_78
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11dac24edfaf6810800000000000000
+      internalID: 1760819348463341853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_79
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1905f91d7fa400cf0800000000000000
+      internalID: -288147947917455215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b8fb3eca2834bc0800000000000000
+      internalID: -3800049981503599826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_81
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 4
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c06759ce5f154900800000000000000
+      internalID: 667974611699720385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e0706dfe7176f90800000000000000
+      internalID: -6960568380222402964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone and Rock_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db06dbd62d985420800000000000000
+      internalID: 2619015973538499537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stone and Rock_0: 4169403576475248064
+      Stone and Rock_1: -1012578838172530703
+      Stone and Rock_10: 3860874382478923126
+      Stone and Rock_11: -9052527601578257212
+      Stone and Rock_12: -8400943377616895652
+      Stone and Rock_13: 8919150919235582830
+      Stone and Rock_14: 7266525403344031891
+      Stone and Rock_15: -3736881466281061995
+      Stone and Rock_16: 3732926569777814156
+      Stone and Rock_17: 7574222892030923052
+      Stone and Rock_18: 7797208264580760875
+      Stone and Rock_19: 4383467442291552274
+      Stone and Rock_2: -5360025267050557785
+      Stone and Rock_20: 2419498805102897997
+      Stone and Rock_21: -4922893063831064853
+      Stone and Rock_22: -3446409612217577963
+      Stone and Rock_23: -1863761510308940565
+      Stone and Rock_24: -772597611871089682
+      Stone and Rock_25: -3486188389619997085
+      Stone and Rock_26: 933806739027862749
+      Stone and Rock_27: 8654686617841938774
+      Stone and Rock_28: 1321280349412842792
+      Stone and Rock_29: 7553777383975919172
+      Stone and Rock_3: -102823161316948575
+      Stone and Rock_30: -5199161916587615738
+      Stone and Rock_31: 2121815219707538829
+      Stone and Rock_32: 2853701531512096445
+      Stone and Rock_33: -8019877119096707440
+      Stone and Rock_34: 2862001183701029628
+      Stone and Rock_35: 7220368428970661453
+      Stone and Rock_36: -6171939709690970461
+      Stone and Rock_37: 5719330679184415252
+      Stone and Rock_38: -7790480468401029927
+      Stone and Rock_39: -8387281435455745108
+      Stone and Rock_4: 5013069417426673057
+      Stone and Rock_40: -306836406988566502
+      Stone and Rock_41: -4695961113096903286
+      Stone and Rock_42: -3123295796006535472
+      Stone and Rock_43: 4277010577048032223
+      Stone and Rock_44: -159356202886900984
+      Stone and Rock_45: 8922518886880734248
+      Stone and Rock_46: 4960954412805973783
+      Stone and Rock_47: -7521828742293368312
+      Stone and Rock_48: 419286708961986495
+      Stone and Rock_49: 6971493578334691200
+      Stone and Rock_5: -723069870433265959
+      Stone and Rock_50: 8552169115122338651
+      Stone and Rock_51: -6763157518271892674
+      Stone and Rock_52: 777320193812948146
+      Stone and Rock_53: -5451989884927271231
+      Stone and Rock_54: -6161460524454392183
+      Stone and Rock_55: -3305126603978006768
+      Stone and Rock_56: 5076286672166783579
+      Stone and Rock_57: 4240795221012656384
+      Stone and Rock_58: 4419634571586332671
+      Stone and Rock_59: 1741682087992676577
+      Stone and Rock_6: 4838217121669799627
+      Stone and Rock_60: -5170331562084707344
+      Stone and Rock_61: 3417723614028918498
+      Stone and Rock_62: 3837680120045383425
+      Stone and Rock_63: 2342961523525500356
+      Stone and Rock_64: 4270691876081437193
+      Stone and Rock_65: 1054463344888753215
+      Stone and Rock_66: 2444986389347189139
+      Stone and Rock_67: -6258253272594386693
+      Stone and Rock_68: 6547475162353938716
+      Stone and Rock_69: -8380235169287508864
+      Stone and Rock_7: 1943354858167720246
+      Stone and Rock_70: -7336899061650283022
+      Stone and Rock_71: 2543806380423897803
+      Stone and Rock_72: -6611359490686976344
+      Stone and Rock_73: 8413304575930380223
+      Stone and Rock_74: -111369240513898987
+      Stone and Rock_75: -2252756096773520179
+      Stone and Rock_76: -6810462716942574506
+      Stone and Rock_77: 80442520992058167
+      Stone and Rock_78: 1760819348463341853
+      Stone and Rock_79: -288147947917455215
+      Stone and Rock_8: 2069367704381870292
+      Stone and Rock_80: -3800049981503599826
+      Stone and Rock_81: 667974611699720385
+      Stone and Rock_82: -6960568380222402964
+      Stone and Rock_83: 2619015973538499537
+      Stone and Rock_9: -3536889861156178378
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

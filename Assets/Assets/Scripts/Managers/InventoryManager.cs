@@ -10,11 +10,13 @@ public class InventoryManager : MonoBehaviour
    public InputActionReference inventoryAction;
   
    [Header("Inventory Settings")]
-   public int inventorySize = 20;
+   public int inventorySize = 32;
    public List<InventorySlot> slots = new List<InventorySlot>();
    Dictionary<string, InventorySlot> itemsById = new Dictionary<string, InventorySlot>();
    [Header("UI References")]
    public GameObject inventoryPanel;
+
+   public InventoryBarManager inventoryBarManager;
    public Transform slotsGrid; // Le parent où les slots seront instanciés
    public GameObject slotPrefab; // Le prefab pour un emplacement d'inventaire
   
@@ -116,6 +118,10 @@ public class InventoryManager : MonoBehaviour
                    if (quantity <= 0)
                    {
                        RefreshInventoryUI();
+                       if (InventoryBarManager.Instance != null)
+                        {
+                            InventoryBarManager.Instance.RefreshInventoryBarUI();
+                        }
                        return true; // Tout a été ajouté
                    }
                }
@@ -131,7 +137,11 @@ public class InventoryManager : MonoBehaviour
               
                if (quantity <= 0)
                {
-                   RefreshInventoryUI();
+                    RefreshInventoryUI();
+                    if (InventoryBarManager.Instance != null)
+                    {
+                        InventoryBarManager.Instance.RefreshInventoryBarUI();
+                    }
                    return true; // Tout a été ajouté
                }
            }
@@ -151,6 +161,10 @@ public class InventoryManager : MonoBehaviour
            {
                slots[i].RemoveItem(quantity);
                RefreshInventoryUI();
+               if (InventoryBarManager.Instance != null)
+                {
+                    InventoryBarManager.Instance.RefreshInventoryBarUI();
+                }
                return;
            }
        }
@@ -163,6 +177,10 @@ public class InventoryManager : MonoBehaviour
            if (!slots[slotIndex].IsEmpty())
            {
                slots[slotIndex].item.Use();
+               if (InventoryBarManager.Instance != null)
+                {
+                    InventoryBarManager.Instance.RefreshInventoryBarUI();
+                }
                RefreshInventoryUI();
            }
        }
@@ -173,7 +191,8 @@ public class InventoryManager : MonoBehaviour
        // Si l'UI n'est pas encore initialisée, retourner
        if (slotsGrid == null || slotPrefab == null)
        {
-           return;
+
+            return;
        }
           
        // Supprimer tous les slots actuels pour les recréer
@@ -191,6 +210,8 @@ public class InventoryManager : MonoBehaviour
            if (slotUI != null)
            {
                slotUI.SetupSlot(i, slots[i]);
+           }else{
+
            }
        }
    }
