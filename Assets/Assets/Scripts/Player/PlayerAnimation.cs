@@ -47,4 +47,5 @@ public class PlayerAnimation : MonoBehaviour
            Debug.LogError("Animator is missing on PlayerController");
         }
     }
+    
 }

@@ -154,7 +154,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -168,7 +168,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -221,9 +221,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 47
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: PickaxesSheet_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 31
+        x: 16
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: PickaxesSheet_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 47
+        x: 32
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: PickaxesSheet_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 31
+        x: 48
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +308,10 @@ TextureImporter:
       name: PickaxesSheet_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 47
+        x: 64
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: PickaxesSheet_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
+        x: 80
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: PickaxesSheet_6
       rect:
         serializedVersion: 2
-        x: 48
-        y: 47
+        x: 96
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: PickaxesSheet_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 31
+        x: 112
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: PickaxesSheet_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 47
+        x: 128
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: PickaxesSheet_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 31
+        x: 144
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: PickaxesSheet_10
       rect:
         serializedVersion: 2
-        x: 80
-        y: 47
+        x: 160
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: PickaxesSheet_11
       rect:
         serializedVersion: 2
-        x: 80
-        y: 31
+        x: 0
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: PickaxesSheet_12
       rect:
         serializedVersion: 2
-        x: 96
-        y: 47
+        x: 16
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,10 +506,10 @@ TextureImporter:
       name: PickaxesSheet_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 31
+        x: 32
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: PickaxesSheet_14
       rect:
         serializedVersion: 2
-        x: 112
-        y: 47
+        x: 48
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,10 +550,10 @@ TextureImporter:
       name: PickaxesSheet_15
       rect:
         serializedVersion: 2
-        x: 112
-        y: 31
+        x: 64
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: PickaxesSheet_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 47
+        x: 80
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,10 +594,10 @@ TextureImporter:
       name: PickaxesSheet_17
       rect:
         serializedVersion: 2
-        x: 128
-        y: 31
+        x: 96
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,10 +616,10 @@ TextureImporter:
       name: PickaxesSheet_18
       rect:
         serializedVersion: 2
-        x: 144
-        y: 47
+        x: 112
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: PickaxesSheet_19
       rect:
         serializedVersion: 2
-        x: 144
-        y: 31
+        x: 128
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,10 +660,10 @@ TextureImporter:
       name: PickaxesSheet_20
       rect:
         serializedVersion: 2
-        x: 160
-        y: 47
+        x: 144
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,9 +683,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 31
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -705,9 +705,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 15
+        y: 16
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,8 +726,8 @@ TextureImporter:
       name: PickaxesSheet_23
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -748,10 +748,10 @@ TextureImporter:
       name: PickaxesSheet_24
       rect:
         serializedVersion: 2
-        x: 48
-        y: 15
+        x: 64
+        y: 16
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,8 +770,8 @@ TextureImporter:
       name: PickaxesSheet_25
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -792,10 +792,10 @@ TextureImporter:
       name: PickaxesSheet_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 15
+        x: 96
+        y: 16
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,8 +814,8 @@ TextureImporter:
       name: PickaxesSheet_27
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 112
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -836,10 +836,10 @@ TextureImporter:
       name: PickaxesSheet_28
       rect:
         serializedVersion: 2
-        x: 80
-        y: 15
+        x: 128
+        y: 16
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,8 +858,8 @@ TextureImporter:
       name: PickaxesSheet_29
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
+        x: 144
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -880,10 +880,10 @@ TextureImporter:
       name: PickaxesSheet_30
       rect:
         serializedVersion: 2
-        x: 96
-        y: 15
+        x: 160
+        y: 16
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -902,7 +902,7 @@ TextureImporter:
       name: PickaxesSheet_31
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 0
         width: 16
         height: 16
@@ -924,10 +924,10 @@ TextureImporter:
       name: PickaxesSheet_32
       rect:
         serializedVersion: 2
-        x: 112
-        y: 15
+        x: 48
+        y: 0
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,7 +946,7 @@ TextureImporter:
       name: PickaxesSheet_33
       rect:
         serializedVersion: 2
-        x: 112
+        x: 64
         y: 0
         width: 16
         height: 16
@@ -968,10 +968,10 @@ TextureImporter:
       name: PickaxesSheet_34
       rect:
         serializedVersion: 2
-        x: 128
-        y: 15
+        x: 80
+        y: 0
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,7 +990,7 @@ TextureImporter:
       name: PickaxesSheet_35
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
         width: 16
         height: 16
@@ -1012,19 +1012,19 @@ TextureImporter:
       name: PickaxesSheet_36
       rect:
         serializedVersion: 2
-        x: 144
-        y: 15
+        x: 112
+        y: 0
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b4f75d74adb0e31f0800000000000000
+      spriteID: bff8d0dd2018fcb46b9ad9cd48ad9d64
       internalID: -1063399429876908213
       vertices: []
       indices: 
@@ -1032,6 +1032,28 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: PickaxesSheet_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39679bc2f6234664f85951d5e98e2688
+      internalID: -3472077522085714804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PickaxesSheet_38
       rect:
         serializedVersion: 2
         x: 144
@@ -1044,31 +1066,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c846677b3e3b0dfc0800000000000000
-      internalID: -3472077522085714804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PickaxesSheet_38
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 15
-        width: 16
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9538c97b25a89d900800000000000000
+      spriteID: 6b2128507cfe7d94db3fc74bfcefe4ae
       internalID: 709750504160002905
       vertices: []
       indices: 
@@ -1088,9 +1088,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a04400bb9afcb5af0800000000000000
+      spriteID: ca68509a9d219154291198483f1de76f
       internalID: -406503013453118454
       vertices: []
       indices: 
@@ -1100,7 +1100,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0954f1d4e35d2f247bd814db92a4a1a3
     internalID: 0
     vertices: []
     indices: 

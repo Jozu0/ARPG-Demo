@@ -13,6 +13,7 @@
         public Sprite icon;
         [TextArea(3, 10)]
         public string description;
+        
 
         public int id;
         
@@ -22,12 +23,15 @@
         public int rarity;
         public ItemType itemType =  ItemType.Food;
         public int type;
+        public string typeString;
 
         public bool isStackable = true;
         public int maxStackSize = 99;        
         [Header("Item Value")]
         public int buyPrice;
         public int sellPrice;
+
+        public int damage;
         
         void Start(){
             rarity = (int)itemRarity;

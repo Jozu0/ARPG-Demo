@@ -15,9 +15,4 @@ MonoBehaviour:
   chestName: Normal Chest
   description: 
   chestItems:
-  - {fileID: 11400000, guid: 360e0dce41f41154297364f24532ca87, type: 2}
-  - {fileID: 11400000, guid: c179f53d692ad5649856c6a140779b06, type: 2}
-  - {fileID: 11400000, guid: d369b840003b01446ad333f86b792247, type: 2}
   - {fileID: 11400000, guid: 1386601fc94b3c84f9939a121881890e, type: 2}
-  rarityMax: 1
-  itemType: 0

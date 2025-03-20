@@ -17,10 +17,12 @@ MonoBehaviour:
   description: 
   id: 0
   itemRarity: 3
-  rarity: 3
+  rarity: 0
   itemType: 0
   type: 0
+  typeString: Sword
   isStackable: 0
   maxStackSize: 99
   buyPrice: 0
   sellPrice: 0
+  damage: 0

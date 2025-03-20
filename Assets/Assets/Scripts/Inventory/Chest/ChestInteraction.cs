@@ -26,7 +26,6 @@ public class ChestInteraction : MonoBehaviour, IInteractable
     {
         return "Appuyez sur E pour ouvrir " + chest.chestName;
     }
-    
     public void Interact()
     {
         Open();

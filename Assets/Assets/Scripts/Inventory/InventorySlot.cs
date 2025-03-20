@@ -43,7 +43,7 @@ public class InventorySlot
        {
            item = itemToAdd;
            quantity = quantityToAdd;
-           return 0; // Tout a été ajouté
+           return 0;
        }
       
        if (item == itemToAdd && itemToAdd.isStackable)
@@ -52,10 +52,10 @@ public class InventorySlot
            int added = Mathf.Min(quantityToAdd, spaceLeft);
           
            quantity += added;
-           return quantityToAdd - added; // Retourne la quantité restante
+           return quantityToAdd - added; 
        }
       
-       return quantityToAdd; // Rien n'a été ajouté
+       return quantityToAdd; 
    }
   
    public void RemoveItem(int quantityToRemove)

@@ -9,6 +9,8 @@ public class PlayerInteraction  : InputHandler
    [Header("UI References")]
    public GameObject interactionPromptPanel;
    public TextMeshProUGUI interactionPromptText;
+
+
   
    // L'interactable actuellement à portée
    private IInteractable currentInteractable;
@@ -66,6 +68,7 @@ public class PlayerInteraction  : InputHandler
        {
            interactionPromptPanel.SetActive(true);
            interactionPromptText.text = currentInteractable.GetInteractionPrompt();
+
        }
    }
       

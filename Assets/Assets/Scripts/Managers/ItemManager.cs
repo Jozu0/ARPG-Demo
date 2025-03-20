@@ -73,8 +73,6 @@ public class ItemManager : MonoBehaviour
             }
             itemsByTypeAndRarity[typeRarityKey].Add(item);
         }
-        
-        Debug.Log($"Initialized item dictionaries with {sourceItems.Count} items");
     }
 
     

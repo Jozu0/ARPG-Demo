@@ -1,15 +1,18 @@
-// Ce script gère tout le système de combat du joueur: santé, mana, attaques et dégâts
-// Il est au cœur du gameplay, permettant au joueur d'interagir avec les ennemis
 using UnityEngine;
-using UnityEngine.Events;  // Nécessaire pour utiliser UnityEvent
+using UnityEngine.Events; 
+using System.Collections.Generic;
+
 
 
 public class PlayerCombatSystem : MonoBehaviour
 {
    // --- PARAMÈTRES DE SANTÉ ---
-   [Header("Health Settings")]
-   public int maxHealth = 100;      // Santé maximale que le joueur peut avoir
-   public int currentHealth;        // Santé actuelle du joueur (initialisée dans Start)
+    [Header("Health Settings")]
+    public int maxHealth = 5;      // Santé maximale que le joueur peut avoir
+    public int currentHealth;        // Santé actuelle du joueur (initialisée dans Start)
+    public GameObject lifeBar;
+    private List<GameObject> hearts = new List<GameObject>();
+    public GameObject heart;
   
    // --- PARAMÈTRES DE MANA ---
    [Header("Mana Settings")]
@@ -52,9 +55,14 @@ public class PlayerCombatSystem : MonoBehaviour
    private void Start()
    {
        // Initialiser la santé et la mana à leurs valeurs maximales
-       currentHealth = maxHealth;
-       currentMana = maxMana;
-      
+        for (int i = 0; i <(maxHealth); i++)
+        {
+            GameObject hp = Instantiate(heart, lifeBar.transform);
+            hearts.Add(hp);
+            currentHealth = maxHealth;      
+        }
+            currentMana = maxMana;
+        
        // Déclencher les événements pour initialiser l'UI
        // Le ? avant Invoke est un "opérateur de propagation nulle"
        // qui vérifie si onHealthChanged n'est pas null avant d'appeler Invoke
@@ -67,6 +75,9 @@ public class PlayerCombatSystem : MonoBehaviour
    [ContextMenu("Attack1")]
    public void Attack1()
    {
+        bool hasWeaponEquipped = animator.GetBool("SwordEquipped") || animator.GetBool("PickaxeEquipped");
+        if (!hasWeaponEquipped)
+        return; 
        // Vérifier si le cooldown est terminé
        if (Time.time - lastAttackTime1 < attackCooldown1)
            return;  // Sortir de la fonction si le cooldown n'est pas terminé
@@ -102,48 +113,41 @@ public class PlayerCombatSystem : MonoBehaviour
        // Note: Ici, il manque le code qui détecterait et infligerait des dégâts aux ennemis
        // C'est probablement intentionnel pour simplifier l'exemple ou sera ajouté plus tard
    }
-  
-   // Fonction pour que le joueur subisse des dégâts
-   // [ContextMenu] permet de tester cette fonction depuis l'inspecteur
-//    [ContextMenu("TakeDamage")]
-//    public void TakeDamage()
-//    {
-//        // Dans cette version, les dégâts sont fixés à 10 pour simplifier
-//        int damage = 10;
-      
-//        // Réduire la santé par le montant de dégâts
-//        currentHealth -= damage;
-      
-//        // Déclencher l'événement de changement de santé pour mettre à jour l'UI
-//        onHealthChanged?.Invoke(currentHealth, maxHealth);
-      
-//        // Message de débogage dans la console
-//        Debug.Log("TakeDamage");
-      
-//        // Jouer l'animation de dégâts si un Animator existe
-//        if (animator)
-//        {
-//            Debug.Log("Hit");
-//            animator.SetTrigger("Hit");
-//        }
-      
-//        // Vérifier si le joueur est mort (santé ≤ 0)
-//        if (currentHealth <= 0)
-//        {
-//            Die();
-//        }
-//    }
+
+   [ContextMenu("TakeDamage")]
+   public void TakeDamage()
+   {
+       // Dans cette version, les dégâts sont fixés à 10 pour simplifier
+        int damage = 1;
+        
+        // Réduire la santé par le montant de dégâts
+        currentHealth -= damage;
+        GameObject heartToRemove = hearts[hearts.Count - 1]; 
+        hearts.RemoveAt(hearts.Count - 1); 
+        Destroy(heartToRemove);   
+
+        
+        // Jouer l'animation de dégâts si un Animator existe
+        if (animator)
+        {
+            Debug.Log("Hit");
+            animator.SetTrigger("Hit");
+        }
+        
+        // Vérifier si le joueur est mort (santé ≤ 0)
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+   }
   
 //    // Fonction pour restaurer de la santé (par exemple avec une potion)
-//    public void RestoreHealth(int amount)
-//    {
-//        // Augmenter la santé mais sans dépasser le maximum
-//        // Mathf.Min retourne la plus petite valeur entre ses deux arguments
-//        currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-      
-//        // Mettre à jour l'UI
-//        onHealthChanged?.Invoke(currentHealth, maxHealth);
-//    }
+   public void RestoreHealth(int amount)
+   {
+       // Augmenter la santé mais sans dépasser le maximum
+       // Mathf.Min retourne la plus petite valeur entre ses deux arguments
+
+   }
   
 //    // Fonction pour restaurer de la mana (par exemple avec une potion)
 //    public void RestoreMana(int amount)
@@ -177,24 +181,24 @@ public class PlayerCombatSystem : MonoBehaviour
 //    }
   
 //    // Fonction privée appelée quand le joueur meurt
-//    private void Die()
-//    {
-//        // Jouer l'animation de mort si un Animator existe
-//        if (animator)
-//        {
-//            animator.SetTrigger("Die");
-//        }
+   private void Die()
+   {
+       // Jouer l'animation de mort si un Animator existe
+       if (animator)
+       {
+           animator.SetTrigger("Die");
+       }
       
-//        // Désactiver le contrôleur de joueur pour empêcher tout mouvement
-//        PlayerController playerController = GetComponent<PlayerController>();
-//        if (playerController)
-//            playerController.enabled = false;
+       // Désactiver le contrôleur de joueur pour empêcher tout mouvement
+       PlayerController playerController = GetComponent<PlayerController>();
+       if (playerController)
+           playerController.enabled = false;
       
-//        // Déclencher l'événement de mort
-//        // Cela peut être utilisé par d'autres systèmes pour réagir à la mort du joueur
-//        onPlayerDeath?.Invoke();
+       // Déclencher l'événement de mort
+       // Cela peut être utilisé par d'autres systèmes pour réagir à la mort du joueur
+       onPlayerDeath?.Invoke();
       
-//        // Remarque: D'autres actions pourraient être ajoutées ici
-//        // Comme afficher un écran de game over, jouer un son, etc.
-//    }
+       // Remarque: D'autres actions pourraient être ajoutées ici
+       // Comme afficher un écran de game over, jouer un son, etc.
+   }
 }

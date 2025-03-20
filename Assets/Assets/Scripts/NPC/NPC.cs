@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour, IInteractable
    [Header("Custom Settings (Optional)")]
    [Tooltip("Laissez vide pour utiliser le nom défini dans le DialogueData")]
    public string customName;
+   public string npcname;
   
    public void Interact()
    {
@@ -38,8 +39,14 @@ public class NPC : MonoBehaviour, IInteractable
            return "Appuyez sur E pour interagir";
        }
           
-       string name = string.IsNullOrEmpty(customName) ? dialogueData.npcName : customName;
+       name = string.IsNullOrEmpty(customName) ? dialogueData.npcName : customName;
        return "Appuyez sur E pour parler à " + name;
+   }
+
+   public string GetNamePrompt()
+   {
+        name = string.IsNullOrEmpty(customName) ? dialogueData.npcName : customName;
+        return name;
    }
 
 }
