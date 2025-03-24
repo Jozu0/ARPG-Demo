@@ -5,6 +5,7 @@ public class PlayerAnimation : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private MovementInputHandler playerMovementInputHandler;
     [SerializeField] private Animator playerAnimator;
+    [SerializeField] private Animator hitZoneAnimator;
 
 
     private Vector2 lastMovementDirection;
@@ -32,6 +33,8 @@ public class PlayerAnimation : MonoBehaviour
         playerAnimator.SetFloat("LastX", lastMovementDirection.x);
         playerAnimator.SetFloat("LastY", lastMovementDirection.y);
         playerAnimator.SetFloat("MoveMagnitude", moveDirection.magnitude);
+        hitZoneAnimator.SetFloat("LastX", lastMovementDirection.x);
+        hitZoneAnimator.SetFloat("LastY", lastMovementDirection.y);
         
  
     }

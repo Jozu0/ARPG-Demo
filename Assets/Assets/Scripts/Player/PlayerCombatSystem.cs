@@ -21,12 +21,13 @@ public class PlayerCombatSystem : MonoBehaviour
   
    // --- PARAMÈTRES DE COMBAT ---
    [Header("Combat Settings")]
-   public int attackDamage = 10;    // Quantité de dégâts infligés par une attaque
+   public int attackDamage = 1;    // Quantité de dégâts infligés par une attaque
    public float attackRange = 1.0f;  // Distance à laquelle le joueur peut attaquer
    public float attackCooldown1 = 1f;
    public float attackCooldown2 = 2f; // Temps minimum entre deux attaques (en secondes)
     // Temps minimum entre deux attaques (en secondes)
    public LayerMask enemyLayers;    // Couches (Layers) qui contiennent les ennemis
+   public BoxCollider2D hitCollider;
   
    // --- ÉVÉNEMENTS ---
    // Les UnityEvents permettent de connecter ce script à d'autres systèmes (comme l'UI)
@@ -42,7 +43,7 @@ public class PlayerCombatSystem : MonoBehaviour
    private float lastAttackTime2;    // Moment de la dernière attaque (pour le cooldown)
 
    private Animator animator;       // Référence au composant Animator pour les animations
-   public Animator childAnimator;
+   public Animator hitAnimator;
   
    // Awake est appelé quand l'objet est initialisé, avant Start
    private void Awake()
@@ -59,7 +60,7 @@ public class PlayerCombatSystem : MonoBehaviour
         {
             GameObject hp = Instantiate(heart, lifeBar.transform);
             hearts.Add(hp);
-            currentHealth = maxHealth;      
+            currentHealth = maxHealth;    
         }
             currentMana = maxMana;
         
@@ -86,14 +87,28 @@ public class PlayerCombatSystem : MonoBehaviour
        lastAttackTime1 = Time.time;
       
        // Jouer l'animation d'attaque si un Animator existe
-       if (animator != null && childAnimator!= null);
+       if (animator != null);
        {
            animator.SetTrigger("Attack1");
+           hitAnimator.SetTrigger("Attack1");
+
        }
-      
-       // Note: Ici, il manque le code qui détecterait et infligerait des dégâts aux ennemis
-       // C'est probablement intentionnel pour simplifier l'exemple ou sera ajouté plus tard
+       // Get the HitCollision component from child object
+        HitCollider hitCollider = GetComponentInChildren<HitCollider>();
+
    }
+    // Coroutine to disable the hit collider after a delay
+    // Coroutine to disable the hit collider after a delay
+    // private IEnumerator DisableHitColliderAfterDelay(HitCollider hitCollider)
+    // {
+    //     // Wait for the attack animation to play
+    //     // You might want to adjust this time based on your animation length
+    //     yield return new WaitForSeconds(0.5f);
+        
+    //     // Disable the collider
+    //     hitCollider.DisableCollider();
+    // }      
+
 
    public void Attack2()
    {
@@ -105,9 +120,10 @@ public class PlayerCombatSystem : MonoBehaviour
        lastAttackTime2 = Time.time;
       
        // Jouer l'animation d'attaque si un Animator existe
-       if (animator != null && childAnimator!= null);
+       if (animator != null);
        {
            animator.SetTrigger("Attack2");
+           
        }
       
        // Note: Ici, il manque le code qui détecterait et infligerait des dégâts aux ennemis
@@ -115,18 +131,13 @@ public class PlayerCombatSystem : MonoBehaviour
    }
 
    [ContextMenu("TakeDamage")]
-   public void TakeDamage()
+   public void TakeDamage(int damage)
    {
        // Dans cette version, les dégâts sont fixés à 10 pour simplifier
-        int damage = 1;
-        
         // Réduire la santé par le montant de dégâts
         currentHealth -= damage;
-        GameObject heartToRemove = hearts[hearts.Count - 1]; 
-        hearts.RemoveAt(hearts.Count - 1); 
-        Destroy(heartToRemove);   
-
-        
+        onHealthChanged?.Invoke(currentHealth, maxHealth);
+        MinusXHeart(damage);
         // Jouer l'animation de dégâts si un Animator existe
         if (animator)
         {
@@ -144,9 +155,9 @@ public class PlayerCombatSystem : MonoBehaviour
 //    // Fonction pour restaurer de la santé (par exemple avec une potion)
    public void RestoreHealth(int amount)
    {
-       // Augmenter la santé mais sans dépasser le maximum
-       // Mathf.Min retourne la plus petite valeur entre ses deux arguments
+        // currentHealth -= damage;
 
+        // GameObject heartToRemove = hearts.Add; 
    }
   
 //    // Fonction pour restaurer de la mana (par exemple avec une potion)
@@ -200,5 +211,14 @@ public class PlayerCombatSystem : MonoBehaviour
       
        // Remarque: D'autres actions pourraient être ajoutées ici
        // Comme afficher un écran de game over, jouer un son, etc.
+   }
+
+   public void MinusXHeart(int damage){
+        for(int i = 1; i<damage ;i++){
+            GameObject heartToRemove = hearts[hearts.Count - 1]; 
+            hearts.RemoveAt(hearts.Count - 1); 
+            Destroy(heartToRemove);
+        } 
+          
    }
 }
