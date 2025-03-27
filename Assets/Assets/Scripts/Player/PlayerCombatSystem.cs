@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events; 
 using System.Collections.Generic;
+using DG.Tweening;
 
 
 
@@ -13,6 +14,8 @@ public class PlayerCombatSystem : MonoBehaviour
     public GameObject lifeBar;
     private List<GameObject> hearts = new List<GameObject>();
     public GameObject heart;
+
+    public Rigidbody2D rb;
   
    // --- PARAMÈTRES DE MANA ---
    [Header("Mana Settings")]
@@ -27,7 +30,7 @@ public class PlayerCombatSystem : MonoBehaviour
    public float attackCooldown2 = 2f; // Temps minimum entre deux attaques (en secondes)
     // Temps minimum entre deux attaques (en secondes)
    public LayerMask enemyLayers;    // Couches (Layers) qui contiennent les ennemis
-   public BoxCollider2D hitCollider;
+   public Collider2D hitCollider;
   
    // --- ÉVÉNEMENTS ---
    // Les UnityEvents permettent de connecter ce script à d'autres systèmes (comme l'UI)
@@ -38,11 +41,13 @@ public class PlayerCombatSystem : MonoBehaviour
    public UnityEvent onPlayerDeath;              // Déclenché quand le joueur meurt
   
    // --- VARIABLES PRIVÉES ---
+    private float invincibilityFrame = 1f;
    private float lastAttackTime1;    // Moment de la dernière attaque (pour le cooldown)
-
    private float lastAttackTime2;    // Moment de la dernière attaque (pour le cooldown)
+   private float lastHit = 0f;
 
    private Animator animator;       // Référence au composant Animator pour les animations
+   public Animator enemyAnimator;
    public Animator hitAnimator;
   
    // Awake est appelé quand l'objet est initialisé, avant Start
@@ -50,6 +55,7 @@ public class PlayerCombatSystem : MonoBehaviour
    {
        // Récupérer le composant Animator attaché à ce même GameObject
        animator = GetComponent<Animator>();
+       rb = GetComponent<Rigidbody2D>();
    }
   
    // Start est appelé avant la première mise à jour
@@ -87,27 +93,14 @@ public class PlayerCombatSystem : MonoBehaviour
        lastAttackTime1 = Time.time;
       
        // Jouer l'animation d'attaque si un Animator existe
-       if (animator != null);
+       if (animator)
        {
            animator.SetTrigger("Attack1");
            hitAnimator.SetTrigger("Attack1");
 
        }
-       // Get the HitCollision component from child object
-        HitCollider hitCollider = GetComponentInChildren<HitCollider>();
 
-   }
-    // Coroutine to disable the hit collider after a delay
-    // Coroutine to disable the hit collider after a delay
-    // private IEnumerator DisableHitColliderAfterDelay(HitCollider hitCollider)
-    // {
-    //     // Wait for the attack animation to play
-    //     // You might want to adjust this time based on your animation length
-    //     yield return new WaitForSeconds(0.5f);
-        
-    //     // Disable the collider
-    //     hitCollider.DisableCollider();
-    // }      
+   }   
 
 
    public void Attack2()
@@ -120,7 +113,7 @@ public class PlayerCombatSystem : MonoBehaviour
        lastAttackTime2 = Time.time;
       
        // Jouer l'animation d'attaque si un Animator existe
-       if (animator != null);
+       if (animator)
        {
            animator.SetTrigger("Attack2");
            
@@ -135,6 +128,9 @@ public class PlayerCombatSystem : MonoBehaviour
    {
        // Dans cette version, les dégâts sont fixés à 10 pour simplifier
         // Réduire la santé par le montant de dégâts
+        if (Time.time - lastHit < invincibilityFrame)
+            return;
+        lastHit = Time.time;
         currentHealth -= damage;
         onHealthChanged?.Invoke(currentHealth, maxHealth);
         MinusXHeart(damage);
@@ -144,11 +140,23 @@ public class PlayerCombatSystem : MonoBehaviour
             Debug.Log("Hit");
             animator.SetTrigger("Hit");
         }
-        
+
+        float x = enemyAnimator.GetFloat("LastX");
+        float y = enemyAnimator.GetFloat("LastY");
+
         // Vérifier si le joueur est mort (santé ≤ 0)
         if (currentHealth <= 0)
         {
+            Vector2 knockbackDirection = new Vector2(x, y).normalized * 2f;
+            Vector2 targetPosition = (Vector2)transform.position + knockbackDirection;
+            rb.DOMove(targetPosition, 0.5f, false);
             Die();
+        }
+        else
+        {
+            Vector2 knockbackDirection = new Vector2(x, y).normalized * 2f;
+            Vector2 targetPosition = (Vector2)transform.position + knockbackDirection;
+            rb.DOMove(targetPosition, 0.5f, false);
         }
    }
   

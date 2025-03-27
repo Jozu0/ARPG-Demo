@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Etienne
   dialogueLines:
-  - "olala la saucisse c tr\xE8s bon"
+  - 'Nan remets Zicos par contre '
   - "Tiens prend 10 \u20AC TU fais piti\xE9\n"

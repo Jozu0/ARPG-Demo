@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HitCollider : MonoBehaviour
+public class HitColliderEnemy : MonoBehaviour
 {
     private BoxCollider2D myCollider;
     
@@ -26,7 +26,7 @@ public class HitCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the collider belongs to an enemy
-        Enemy enemy = other.GetComponent<Enemy>();
+        EnemyCombatSystem enemy = other.GetComponent<EnemyCombatSystem>();
         
         if (enemy != null)
         {

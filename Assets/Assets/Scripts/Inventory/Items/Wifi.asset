@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f24dad23048343418c73dc140bf0ec6, type: 3}
-  m_Name: Sword
+  m_Name: Wifi
   m_EditorClassIdentifier: 
-  itemName: Sword
-  icon: {fileID: -4890137659002827645, guid: 69eac929a2dfa8b409743335241b19b6, type: 3}
+  itemName: Wifi
+  icon: {fileID: 21300000, guid: 88d6a6ff9a3bf274e8a3747af6f778cf, type: 3}
   description: 
   id: 0
-  itemRarity: 3
-  rarity: 4
-  itemType: 0
+  itemRarity: 0
+  rarity: 0
+  itemType: 4
   type: 0
-  typeString: Sword
-  isStackable: 0
+  typeString: 
+  isStackable: 1
   maxStackSize: 99
   buyPrice: 0
   sellPrice: 0
