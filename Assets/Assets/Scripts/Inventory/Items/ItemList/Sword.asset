@@ -16,8 +16,8 @@ MonoBehaviour:
   icon: {fileID: -4890137659002827645, guid: 69eac929a2dfa8b409743335241b19b6, type: 3}
   description: 
   id: 0
-  itemRarity: 3
-  rarity: 4
+  itemRarity: 0
+  rarity: 0
   itemType: 0
   type: 0
   typeString: Sword

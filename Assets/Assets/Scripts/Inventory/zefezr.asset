@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f24dad23048343418c73dc140bf0ec6, type: 3}
-  m_Name: Apple
+  m_Name: zefezr
   m_EditorClassIdentifier: 
-  itemName: Apple
-  icon: {fileID: -8758852475376302448, guid: f9901186b476ecb4a8269fd5f417f9b8, type: 3}
-  description: 'An Apple
-
-'
-  id: 1
-  itemRarity: 1
+  itemName: 
+  icon: {fileID: 0}
+  description: 
+  id: 0
+  itemRarity: 0
   rarity: 1
-  itemType: 0
+  itemType: 4
   type: 0
+  typeString: 
   isStackable: 1
   maxStackSize: 99
-  buyPrice: 10
-  sellPrice: 2
+  buyPrice: 0
+  sellPrice: 0
+  damage: 0

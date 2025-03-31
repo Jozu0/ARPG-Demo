@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HitColliderEnemy : MonoBehaviour
+public class HitColliderPlayerOnEnemy : MonoBehaviour
 {
     private BoxCollider2D myCollider;
     
@@ -26,15 +26,11 @@ public class HitColliderEnemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the collider belongs to an enemy
-        EnemyCombatSystem enemy = other.GetComponent<EnemyCombatSystem>();
-        
+        EnemyCombatSystem enemy = other.GetComponentInParent<EnemyCombatSystem>();
         if (enemy != null)
         {
             // Deal damage to the enemy
             enemy.TakeDamage(playerDamage);
-            
-            // You can add effects here, like particle effects or camera shake
-            Debug.Log("Hit enemy: " + other.name);
         }else{
         }
     }

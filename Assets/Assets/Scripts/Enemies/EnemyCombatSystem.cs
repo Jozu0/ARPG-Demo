@@ -24,11 +24,7 @@ public class EnemyCombatSystem : MonoBehaviour
 
     [Header("Layers and references")]
     private Rigidbody2D rb;
-    public Vector2 direction;    // Référence au Rigidbody2D, Referencé dans EnemyAnimator
-    public LayerMask enemyLayers;  // Couches (Layers) qui contiennent les ennemis
-    public LayerMask obstacleLayer;
-    public Transform playerTransform; // Référence au joueur
-    // Layer des obstacles
+    public Vector2 direction; // Référence au Rigidbody2D, Referencé dans EnemyAnimator
     private Animator animator;
     public Animator playerAnimator;// Référence au joueur
     [SerializeField] private EnemyCombatSystem enemyCombatSystem;
@@ -41,17 +37,11 @@ public class EnemyCombatSystem : MonoBehaviour
     [Range(0, 1)]                        // [Range] limite la valeur entre 0 et 1
     public float dropChance = 0.3f;      // Probabilité de laisser tomber un objet (30% par défaut)
 
-    // --- ÉVÉNEMENTS ---
-    // Les UnityEvents permettent de connecter des fonctions dans l'inspecteur
-    [Header("Events")]
-    public UnityEvent<int, int> onHealthChanged;  // Déclenché quand la santé change (paramètres: santé actuelle, santé max)
-    public UnityEvent onEnemyDeath;               // Déclenché quand l'ennemi meurt
-
     // --- VARIABLES PRIVÉES ---
     private Enemy enemy;             // Référence au composant Enemy
     private float invincibilityFrame = 1f;
     private float lastAttackTime;
-   private float lastHit = 0f;
+    private float lastHit = 0f;
 
 
 
@@ -70,19 +60,14 @@ public class EnemyCombatSystem : MonoBehaviour
         currentHealth = maxHealth;
         rb = GetComponent<Rigidbody2D>();
         DOTween.Init();
-
-        // Déclencher l'événement onHealthChanged pour initialiser l'UI
-        // Le ? avant Invoke est un "opérateur de propagation nulle"
-        // qui vérifie si onHealthChanged n'est pas null avant d'appeler Invoke
-        onHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
     // Méthode appelée quand l'ennemi prend des dégâts
     [ContextMenu("TakeDamage")]
     public void TakeDamage(int damage)
     {
-        // Dans cette version, les dégâts sont fixés à 10 pour simplifier
-        // Réduire la santé par le montant de dégâts
+
+        // Réduire la santé par le montant de dégâts - Vérifier si la frame d'invinsibilité est active.
         if (Time.time - lastHit < invincibilityFrame)
             return;
         lastHit = Time.time;
@@ -93,30 +78,23 @@ public class EnemyCombatSystem : MonoBehaviour
             Debug.Log("Hit");
             animator.SetTrigger("Hit");
         }
-        float x = playerAnimator.GetFloat("LastX");
-        float y = playerAnimator.GetFloat("LastY");
-
+        Vector2 knockbackDirection =  new Vector2(playerAnimator.GetFloat("LastX"),  // Récupération de la direction où regarde le player
+                                                  playerAnimator.GetFloat("LastY")).normalized * 2f;
+        Vector2 targetPosition = (Vector2)transform.position + knockbackDirection;
+        rb.DOMove(targetPosition, 0.5f, false); // L'enemy est kick dans la direction où regarde le player.
+            
         // Vérifier si le joueur est mort (santé ≤ 0)
         if (currentHealth <= 0)
         {
-            Vector2 knockbackDirection = new Vector2(x, y).normalized * 2f;
-            Vector2 targetPosition = (Vector2)transform.position + knockbackDirection;
-            rb.DOMove(targetPosition, 0.5f, false);
             Die();
         }
-        else
-        {
-            Vector2 knockbackDirection = new Vector2(x, y).normalized * 2f;
-            Vector2 targetPosition = (Vector2)transform.position + knockbackDirection;
-            rb.DOMove(targetPosition, 0.5f, false);
-        }
-    }
+    }      
 
     private void Die()
     {
         rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Kinematic;  // Disable physics interactions
-        enabled = false;
+        rb.bodyType = RigidbodyType2D.Kinematic; 
+        enabled = false; 
 
         // Jouer l'animation de mort si un Animator existe
         if (animator)
@@ -125,6 +103,7 @@ public class EnemyCombatSystem : MonoBehaviour
             SlimeWorldCollision.enabled = false;
             SlimeHitBox.enabled = false;
             SlimeDamageBox.enabled = false;
+            // Désactivation de toutes les collisions avant le destroy pour pouvoir passer au travers de l'enemy mort.
         }
         PlayerCombatSystem player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<PlayerCombatSystem>();
         if (player != null)
@@ -139,24 +118,24 @@ public class EnemyCombatSystem : MonoBehaviour
         // Potentiellement faire tomber un objet
         DropItem();
     }
-    public void DestroyAfterDeath()
+    public void DestroyAfterDeath() // Fonction appelé dans l'animation event
+                                    // lors de la fin d'anim de mort
     {
         Destroy(gameObject);
     }
+    
+    
 
     // Méthode pour attaquer le joueur
-    public void Attack(PlayerCombatSystem player)
+    public void Attack()
     {
         // Vérifier si le cooldown est terminé 
-        if (Time.time - lastAttackTime < attackCooldown || player.currentHealth <= 0)
+        if (Time.time - lastAttackTime < attackCooldown )
             return;  // Sortir de la fonction si le cooldown n'est pas terminé
 
         // Mettre à jour le temps de la dernière attaque
         lastAttackTime = Time.time;
-
-        // Jouer l'animation d'attaque si un Animator existe
-        // Infliger des dégâts au joueur
-        player.TakeDamage(attackDamage);
+        animator.SetTrigger("Attack");
     }
 
 
@@ -177,20 +156,4 @@ public class EnemyCombatSystem : MonoBehaviour
             Instantiate(drop, transform.position, Quaternion.identity);
         }
     }
-
-    // Méthode publique pour obtenir la santé actuelle (pourcentage)
-    public float GetHealthPercentage()
-    {
-        return (float)currentHealth / maxHealth;
-    }
-
-    // Méthode publique pour restaurer de la santé (utile pour les objets de soin)
-    // public void RestoreHealth(int amount)
-    // {
-    //     // Augmenter la santé sans dépasser le maximum
-    //     currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-
-    //     // Mettre à jour l'UI
-    //     onHealthChanged?.Invoke(currentHealth, maxHealth);
-    // }
 }

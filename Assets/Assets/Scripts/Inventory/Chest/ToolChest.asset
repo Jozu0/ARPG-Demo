@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010e055877cde0948a6dd4ba5060749d, type: 3}
+  m_Name: ToolChest
+  m_EditorClassIdentifier: 
+  chestName: Tool Chest
+  description: 
+  chestItems:
+  - {fileID: 11400000, guid: dc6e42cfb85021c428cfddf823bd108c, type: 2}

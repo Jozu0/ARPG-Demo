@@ -1,42 +1,45 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 
 public class Enemy : MonoBehaviour
 {
     [Header("Patrol Settings")]
-    public Transform[] patrolPoints;      // Points de patrouille
-    public float patrolSpeed = -3f;          // Vitesse de déplacement
-    public float chaseSpeed = 5f;
+    [SerializeField] Transform[] patrolPoints;      // Points de patrouille
+    [SerializeField] float patrolSpeed = -3f;          // Vitesse de déplacement
+    [SerializeField] float chaseSpeed = 5f;
     private int currentPointIndex = 0;    // Index du point actuel        // Compteur pour l'attente
 
     [Header("Chasing Parameters")]
     private bool isChasing = false;
-    public float detectionRadius = 4f;
-    public float attackDetectionRadius = 1f;
-    public float chaseTime = 4f;          // Durée de poursuite après avoir perdu le joueur
-    private float chaseTimer = 0f;
+    [SerializeField] float detectionRadius = 4f;
+    [SerializeField] float chaseTime = 4f;          // Durée de poursuite après avoir perdu le joueur
+    [SerializeField] float chaseTimer = 0f;
 
     [Header("Obstacle Avoidance")]
-    public float obstacleDetectionDistance = 1.0f;
-    public float avoidanceStrength = 1.5f;
+    [SerializeField] float obstacleDetectionDistance = 1.0f;
+    [SerializeField]float avoidanceStrength = 1.5f;
 
     [Header("Attack")]
-    public float attackDelay = 5f;
-    private float lastAttackTime = 0f;    // Pour le cooldown d'attaque
+    [SerializeField] float attackDelay = 5f;
+    [SerializeField] float lastAttackTime = 0f;    // Pour le cooldown d'attaque
+    [SerializeField] float attackDetectionRadius = 2f;
+    [SerializeField] float jumpDistance = 0f;
+
+
 
     [Header("Idle-Tired")]
-    public float tiredTime = 10f;
+    [SerializeField]float tiredTime = 10f;
 
     [Header("Layers and references")]
     private Rigidbody2D rb;
     public Vector2 direction;    // Référence au Rigidbody2D, Referencé dans EnemyAnimator
-    public LayerMask enemyLayers;  // Couches (Layers) qui contiennent les ennemis
     public LayerMask obstacleLayer;
     public Transform playerTransform; // Référence au joueur
     // Layer des obstacles
-    private Animator animator;
-    public Animator playerAnimator;// Référence au joueur
+    [SerializeField] Animator animator;
+    [SerializeField] Animator playerAnimator;// Référence au joueur
     private bool isTired = false;
     private SpriteRenderer spriteRenderer;
     private bool isAttackFinished = false;
@@ -53,6 +56,7 @@ public class Enemy : MonoBehaviour
     }
 
     private EnemyState currentState = EnemyState.Patrol;
+
 
 
 
@@ -125,13 +129,13 @@ public class Enemy : MonoBehaviour
             }
         }
 
+        //Si on est pas en idle ni Attack, que le player est dans la zone d'attack. 
         if (currentState != EnemyState.Idle && currentState != EnemyState.Attack)
         {
-            if (distanceToPlayer <= attackDetectionRadius && !isTired) 
+            if (distanceToPlayer <= attackDetectionRadius) 
             {
                 if (Time.time - lastAttackTime >= attackDelay)
                 {
-                    Debug.Log("Passage en attaque");
                     currentState = EnemyState.Attack;
                 }
             }
@@ -170,7 +174,6 @@ public class Enemy : MonoBehaviour
             currentState = EnemyState.Chase;
             isTired = false;
             spriteRenderer.color = Color.white;
-            Debug.Log("tu passes ici?");
         }
     }
   
@@ -219,34 +222,35 @@ public class Enemy : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         if (!playerTransform || !enemyCombatSystem)
-            return;
-
+            return; 
         // Orienter l'ennemi vers le joueur
         direction = (playerTransform.position - transform.position).normalized;
         if (direction.x != 0)
         {
             transform.localScale = new Vector3(direction.x > 0 ? 1 : -1, 1);
         }
+
         if (Time.time - lastAttackTime >= attackDelay)
         {
-            // Attaquer le joueur
-            if (playerCombatSystem)
+            if(isAttacking == false)
             {
-                if(isAttacking == false){
-                    isAttacking = true;
-                    animator.SetTrigger("Attack");
-                }
-                
+                isAttacking = true;
+                direction = (playerTransform.position - transform.position).normalized;
+                float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+                float maxJumpRange = jumpDistance;
+                float actualJumpDistance = Mathf.Min(distanceToPlayer, maxJumpRange);
+                Vector2 targetPosition = (Vector2)transform.position + direction * (actualJumpDistance - 0.2f);
+                rb.DOMove(targetPosition, 0.5f, false);
+                enemyCombatSystem.Attack();
             }
         }
     }
 
+  
+
     private void AttackFinish()
     {
-        enemyCombatSystem.Attack(playerCombatSystem);
         lastAttackTime = Time.time;  // Restore this line
-        Debug.Log("on reset le lastAttackTime");
-
         isTired = true;  // Restore this line
         isAttackFinished = true;
         currentState = EnemyState.Idle;

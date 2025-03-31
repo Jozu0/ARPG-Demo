@@ -126,14 +126,13 @@ public class PlayerCombatSystem : MonoBehaviour
    [ContextMenu("TakeDamage")]
    public void TakeDamage(int damage)
    {
-       // Dans cette version, les dégâts sont fixés à 10 pour simplifier
-        // Réduire la santé par le montant de dégâts
+
+          // Réduire la santé par le montant de dégâts
         if (Time.time - lastHit < invincibilityFrame)
             return;
         lastHit = Time.time;
         currentHealth -= damage;
-        onHealthChanged?.Invoke(currentHealth, maxHealth);
-        MinusXHeart(damage);
+        MinusXHeart(damage); // Appel à la fonction qui diminue les HP dans l'UI.
         // Jouer l'animation de dégâts si un Animator existe
         if (animator)
         {
@@ -222,7 +221,8 @@ public class PlayerCombatSystem : MonoBehaviour
    }
 
    public void MinusXHeart(int damage){
-        for(int i = 1; i<damage ;i++){
+        for(int i = 0; i<damage ;i++){
+            Debug.Log("- 1 hp"); 
             GameObject heartToRemove = hearts[hearts.Count - 1]; 
             hearts.RemoveAt(hearts.Count - 1); 
             Destroy(heartToRemove);

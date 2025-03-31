@@ -140,7 +140,7 @@ public class InventorySlotUI : MonoBehaviour , IPointerClickHandler, IPointerDow
             // Clic droit - Jeter l'item ou afficher des options
             if (!slotData.IsEmpty())
             {
-                // Pour l'instant, simplement jeter un item
+                // Pour l'instant, simplement utiliser l'item
                 InventoryManager.Instance.UseItem(slotIndex);
             }
         }
